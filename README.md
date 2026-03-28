@@ -1,3 +1,16 @@
+# Overview of the Google Drive Auto-Indexer Script
+
+This Google Apps Script is designed to automate the creation of a complete, organized inventory of a specific Google Drive folder and all of its contents. It extracts the data and formats it directly into a Google Spreadsheet.
+
+Functionalities and features of the script:
+
+* **Automated Data Extraction:** It automatically pulls metadata from your Google Drive files (File Name and Access Link) and populates a Google Sheet, eliminating the need for manual copying and pasting.
+* **Deep Scanning (Recursion):** The script utilizes a programming technique called recursion. This means it doesn't just scan the surface-level files of the main folder; it dives deep into every single subfolder—and the folders inside those subfolders—ensuring no file is left behind.
+* **Accurate Path Mapping:** To help you locate files easily, the script generates a "Folder Path" column. It creates a breadcrumb trail (e.g., *Main Folder > Subfolder 1 > Subfolder 2*) so you know exactly where each document is stored within your Drive hierarchy.
+* **Smart Formatting and Auto-Cleaning:** Every time the script runs, it automatically clears the old data from the spreadsheet before fetching the new list. This prevents duplicate entries. It also sets up the headers, makes them bold, and freezes the top row so you can scroll through large lists comfortably.
+* **Direct Access:** By generating the unique URL for every file, the spreadsheet becomes an interactive dashboard. You can click on any link to open the corresponding file directly from the sheet.
+* **Background Automation Compatibility:** The script is built to be compatible with Google Apps Script's "Triggers" system. This functionality allows the code to run autonomously on a set schedule (like every night at midnight), ensuring your index is always up-to-date without any human intervention.
+
 # How to use it:
 
 ### Phase 1: Getting Your Folder ID
